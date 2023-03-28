@@ -24,7 +24,7 @@ if __name__ == "__main__":
         cmd = f'sourmash sketch dna -p k={k},scaled={scaled}'
         for line in lines_this_iteration:
             line_stripped = line.strip()
-            cmd = cmd + ' ' + line_stripped
+            cmd = cmd + ' ../refseq/' + line_stripped
 
         f.write(cmd + '\n')
 
