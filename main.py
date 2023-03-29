@@ -1,5 +1,5 @@
-k = 21
-scaled = 1000
+k = 31
+scaled = 100
 
 num_files_each_iteration = 2000
 
