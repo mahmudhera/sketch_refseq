@@ -1,7 +1,7 @@
-k = 31
+k = 21
 scaled = 1000
 
-num_files_each_iteration = 5000
+num_files_each_iteration = 2000
 
 list_filename = 'filelist'
 script_filename = 'script.sh'
@@ -26,6 +26,6 @@ if __name__ == "__main__":
             line_stripped = line.strip()
             cmd = cmd + ' ../refseq/' + line_stripped
 
-        f.write(cmd + '\n')
+        f.write(cmd + ' &\n')
 
     f.close()
